@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <div class="list roundBorder">
+        <h2 style="text-align: center;">LISTA DE TAREAS</h2>
+        <form onsubmit="addNewTask(event)" >
+            <input type="text" name="taskText" autocomplete="off" placeholder="Nueva tarea" class="roundBorder">
+            <button type="submit" class="addTaskButton">+</button>
+        </form>
+        <div id="tasksContainer"></div>
+    </div>
+</body>
+</html>
